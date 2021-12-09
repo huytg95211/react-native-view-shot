@@ -387,9 +387,9 @@ public class ViewShot implements UIBlock {
             bitmap.copyPixelsToBuffer(rbaos.asBuffer(total));
             rbaos.setSize(total);
         } else {
-            final Bitmap.CompressFormat cf = Formats.mapping[this.format];
+            // final Bitmap.CompressFormat cf = Formats.mapping[this.format];
 
-            bitmap.compress(cf, (int) (100.0 * quality), os);
+            // bitmap.compress(cf, (int) (100.0 * quality), os);
         }
 
         recycleBitmap(bitmap);
