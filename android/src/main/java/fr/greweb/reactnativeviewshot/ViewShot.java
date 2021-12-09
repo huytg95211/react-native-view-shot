@@ -373,12 +373,12 @@ public class ViewShot implements UIBlock {
             recycleBitmap(childBitmapBuffer);
         }
 
-        if (width != null && height != null && (width != w || height != h)) {
-            final Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap, width, height, true);
-            recycleBitmap(bitmap);
+        // if (width != null && height != null && (width != w || height != h)) {
+        //     final Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap, width, height, true);
+        //     recycleBitmap(bitmap);
 
-            bitmap = scaledBitmap;
-        }
+        //     bitmap = scaledBitmap;
+        // }
 
         // special case, just save RAW ARGB array without any compression
         if (Formats.RAW == this.format && os instanceof ReusableByteArrayOutputStream) {
